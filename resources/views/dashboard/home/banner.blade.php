@@ -40,22 +40,24 @@
 
                             <div class="carousel-inner br-rds8 h100p">
                                 <div class="carousel-item active br-rds8 h100p">
-                                    <!-- <img src="/assets/images/background/carousel/banner_1.jpeg" class="d-block w-100" alt="..."> -->
-                                    <img src="#" class="d-block w-100" alt="...">
+                                    <img src="/assets/images/background/carousel/banner_1.jpeg" class="d-block w-100" alt="...">
+                                    <!-- <img src="#" class="d-block w-100" alt="..."> -->
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5 class="text-white"></h5>
                                         <p></p>
                                     </div>
                                 </div>
                                 <div class="carousel-item br-rds8 h100p">
-                                    <img src="#" class="d-block w-100" alt="...">
+                                <img src="/assets/images/background/carousel/banner_1.jpeg" class="d-block w-100" alt="...">
+                                    <!-- <img src="#" class="d-block w-100" alt="..."> -->
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5 class="text-white"></h5>
                                         <p></p>
                                     </div>
                                 </div>
                                 <div class="carousel-item br-rds8 h100p">
-                                    <img src="#" class="d-block w-100" alt="...">
+                                <img src="/assets/images/background/carousel/banner_1.jpeg" class="d-block w-100" alt="...">
+                                    <!-- <img src="#" class="d-block w-100" alt="..."> -->
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5 class="text-white"></h5>
                                         <p></p>
