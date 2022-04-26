@@ -15,7 +15,7 @@ class index extends Controller
 
         $Config = new Config;
         //test
-        dd($Config->apps());
+        dd($Config->URI());
 
         $info = [
             'geoip'         =>  $Config->geoip($request->ip),
