@@ -155,7 +155,7 @@ $(document).ready(function()
                     dataType: 'JSON',
                     success: function(e,n,r)
                     {
-                        // console.log(e);
+                        console.log(e);
                         //create cookie in serve
                         setCookie(config.apps.cookie_name,JSON.stringify(e.response.cookie),exp);
                         location.href = config.apps.URL + e.response.homepage;
@@ -163,7 +163,7 @@ $(document).ready(function()
                     },
                     error: function(e)
                     {
-                        // console.log(e.responseJSON);
+                        console.log(e.responseJSON);
                         var rsp = e.responseJSON;
                         $(rsp.focus).parents(".ar-content").append("<span class='error'>"+rsp.message+"</span>");
                         $(rsp.focus).parent(".are-hov").addClass("error");
