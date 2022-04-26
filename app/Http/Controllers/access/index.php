@@ -30,6 +30,7 @@ class index extends Controller
         ];
 
 
+        dd($data);
         return view('access.login')->with($data);
     }
 
