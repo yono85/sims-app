@@ -14,6 +14,7 @@ class index extends Controller
     {
 
         $Config = new Config;
+        //test
         dd($Config->apps());
 
         $info = [
