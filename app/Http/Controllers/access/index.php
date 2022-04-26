@@ -15,7 +15,7 @@ class index extends Controller
 
         $Config = new Config;
         //test
-        dd($Config->apps());
+        // dd($Config->apps());
 
         $info = [
             'geoip'         =>  $Config->geoip($request->ip),
@@ -32,7 +32,7 @@ class index extends Controller
         ];
 
 
-        dd($data);
+        // dd($data);
         return view('access.login')->with($data);
     }
 
