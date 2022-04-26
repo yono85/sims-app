@@ -14,6 +14,7 @@ class index extends Controller
     {
 
         $Config = new Config;
+        dd($Config);
 
         $info = [
             'geoip'         =>  $Config->geoip($request->ip),
