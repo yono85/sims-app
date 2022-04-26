@@ -83,7 +83,7 @@
                 <ul>
                     <li>
                         <p><h2>Selamat Datang di <span class="up-txt">{{$apps['name']}}</span></h2></p>
-                        <div class="div w60p">
+                        <div class="div w100p">
                             <p><b class="up-txt">{{$apps['name']}}</b> adalah sistem yang diperuntukan sebagai managemen Pemberian Hibah dan Bansos dibawah Biro Pendidikan dan Mental Sepiritual Setda Provinsi DKI Jakarta</p>
                         </div>
                     </li>

@@ -130,7 +130,7 @@ Route::group(['prefix' => '/dashboard'], function() use ($root)
 
 
     //COMPANY PROFILE
-    // Route::get('/manage/company/profile', $root . '\dashboard\manage\index@main');
+    Route::get('/manage/company/profile', $root . '\dashboard\manage\index@main');
 
     //ACCOUNT
     Route::get('/account', $root . '\dashboard\account\index@main');
