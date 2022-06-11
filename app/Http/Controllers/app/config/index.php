@@ -107,9 +107,9 @@ class index extends Controller
     }
 
 
-    public function geoip($request)
+    public function getgeoip($request)
     {
-        $arrIP = geoip()->getLocation($request['ip']);
+        $arrIP = GeoIP()->getLocation($request);
     
         $data = [
             'ip'                =>  $arrIP['ip'],

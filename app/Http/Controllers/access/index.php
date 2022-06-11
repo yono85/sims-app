@@ -18,7 +18,7 @@ class index extends Controller
         // dd($Config->apps());
 
         $info = [
-            'geoip'         =>  $Config->geoip($request->ip),
+            'geoip'         =>  $Config->getgeoip($request->ip()),
             'uagent'        =>  $Config->uagent()
         ];
 
@@ -44,7 +44,7 @@ class index extends Controller
         $Config = new Config;
 
         $info = [
-            'geoip'         =>  $Config->geoip($request->ip),
+            'geoip'         =>  $Config->getgeoip($request->ip()),
             'uagent'        =>  $Config->uagent()
         ];
 
@@ -69,7 +69,7 @@ class index extends Controller
         $Config = new Config;
 
         $info = [
-            'geoip'         =>  $Config->geoip($request->ip),
+            'geoip'         =>  $Config->getgeoip($request->ip()),
             'uagent'        =>  $Config->uagent()
         ];
 
@@ -116,7 +116,7 @@ class index extends Controller
             {
     
                 $info = [
-                    'geoip'         =>  $Config->geoip($request->ip),
+                    'geoip'         =>  $Config->getgeoip($request->ip()),
                     'uagent'        =>  $Config->uagent()
                 ];
     

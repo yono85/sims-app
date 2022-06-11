@@ -37,7 +37,7 @@ class index extends Controller
 
             $status = 200;
             $data = [
-                'ip'        =>  $request->ip()
+                'ip'        =>  $request->ip()()
             ];
         }
         elseif( trim($request->type) == 'qrcode')

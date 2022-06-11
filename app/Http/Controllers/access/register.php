@@ -46,7 +46,7 @@ class register extends Controller
         $data = json_decode($data, true);
 
         $info = [
-            'geoip'         =>  $Config->geoip($request->ip),
+            'geoip'         =>  $Config->getgeoip($request->ip()),
             'uagent'        =>  $Config->uagent()
         ];
 
