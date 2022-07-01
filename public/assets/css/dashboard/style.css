@@ -5796,6 +5796,10 @@ a.slide[slide="on"] .arslide{
     padding-top: 30px;
 }
 
+.o-arprofile.w720{
+    width: 720px;
+}
+
 .aside-active .o-arprofile{
     margin: auto auto;
 }
@@ -5971,7 +5975,7 @@ a.slide[slide="on"] .arslide{
     width: 100%;
     float: right;
     box-sizing: border-box;
-    padding-left: 15px;
+    /* padding-left: 15px; */
     background-color: #fff;
     box-sizing: border-box;
     border: 1px solid #eee;
@@ -6023,6 +6027,181 @@ a.slide[slide="on"] .arslide{
 
 .ar-profile-r ul li:last-child{
     margin-bottom: 0px;
+}
+
+.ar-profile-r ul li .ttl{
+    font-weight: bold;
+    font-size: 17px;
+    padding: 20px 0px 5px;
+    text-align: center;
+}
+
+.ar-profile-r ul li .ttl .label{
+    float: unset;
+    padding: 0px;
+    font-size: 12px;
+    background-color: orange;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-top: 6px;
+    display: inline-block;
+    text-align: center;
+}
+
+.ar-profile-r ul li.br{
+    border-top: 1px solid #ddd;
+    padding: 25px 45px;
+    float: unset;
+    height: unset;
+    margin-bottom: 0px;
+}
+
+.ar-profile-r ul li.br:first-child{
+    border-top: 0px;
+}
+
+.ar-profile-r ul li .ttlx{
+    font-weight: bold;
+    padding-bottom: 15px;
+    position: relative;
+    margin-right: -40px;
+    margin-left: -40px;
+}
+
+.ar-profile-r ul li .ttlx .lblxx{
+    position: absolute;
+    left: -35px;
+}
+
+.ar-profile-r ul li .ttlx .iconx{
+    font-size: 11px;
+}
+
+.ar-profile-r ul li .ttlx a.sunting{
+    z-index: 2;
+    font-weight: normal;
+    font-size: 11px;
+    color: orange;
+    /* margin-left: 25px; */
+    position: absolute;
+    right: 0px;
+}
+
+/* .ar-profile-r ul li .ttlx a.sunting:before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    left: -14px;
+    top: 5px;
+    position: absolute;
+    z-index: 1;
+}
+*/
+
+.ar-profile-r ul li .ttlx a.sunting .lbl{
+    font-size: 10px !important;
+    text-decoration: underline;
+}
+
+.ar-profile-r ul li[aria-edit="true"] .ttlx a.sunting{
+    display: none;
+}
+
+
+.ar-profile-r ul li.br table{
+    width: 100%;
+}
+
+.ar-profile-r ul li.br table tbody tr td{
+    font-size: 13px;
+}
+
+.ar-profile-r ul li.br[aria-role="false"]{
+    background-color: rgb(255, 210, 217);
+    border-color: pink;
+    border-radius: 4px;
+    position: relative;
+}
+
+.ar-profile-r ul li.br[aria-role="false"]:before{
+    content:"";
+    content: '\e08b';
+    font-family: 'Simple-Line-Icons';
+    font-size: 14px;
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    color: red;
+}
+
+.ar-profile-r ul li.br table td.left{
+    width: 230px;
+}
+
+.ar-profile-r ul li.br table td.left{
+    color: #777;
+    position: relative;
+    vertical-align: top;
+}
+
+.ar-profile-r ul li.br table td.left:after{
+    content:":";
+    position: absolute;
+    right: -5px;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.ar-profile-r ul li.br table td.right{
+    width: calc(100% -230px);
+    text-align: right;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+.ar-profile-r ul li.br[aria-edit="false"] table td.right{
+    padding-bottom: 0px;
+}
+
+.ar-profile-r ul li.br table td.right .form-control{
+    text-align: right;
+}
+
+.ar-profile-r ul li.br table td.right .form-control[disabled="disabled"]{
+    border-color: transparent;
+    padding: 0px;
+    background-color: transparent;
+    /* font-weight: bold; */
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+
+.ar-profile-r ul li.br[aria-edit="false"] table td.right .form-control{
+    float: right;
+}
+
+.ar-profile-r ul li.br table td .area-button{
+    padding: 10px 15px;
+    text-align: right;
+    background-color: #f8f8f8;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: none;
+}
+
+.ar-profile-r ul li.br[aria-edit="true"] table td .area-button{
+    display: block;
+}
+
+.ar-profile-r ul li.br table td .area-button .cmd-sunting{
+    margin-left: 15px;
 }
 
 .ar-profile-r ul li .label{

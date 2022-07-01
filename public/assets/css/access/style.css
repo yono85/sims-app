@@ -1088,7 +1088,7 @@ a.color-blue{
     margin: 0px auto;
     display: block;
     position: relative;
-    width: 680px;
+    width: 720px;
     font-size: 12px;
     padding-top: 30px;
 }
@@ -1150,9 +1150,14 @@ a.color-blue{
     background-color: #fff;
 }
 
+.ar-signup .body.wa600{
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
 .ar-signup .body .ttl{
-    margin-bottom: 35px;
-    padding-bottom: 15px;
+    margin-bottom: 45px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -1407,6 +1412,48 @@ a.color-blue{
 
 .ar-signup .body ul li .ar-li .box-li .in-boxli:last-child{
     margin-bottom: 0px;
+}
+
+/* table in li */
+.ar-signup .body ul li table{
+    width: 100%;
+}
+
+.ar-signup .body ul li table tbody tr td.left{
+    width: 270px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: "Nunito Sans"; */
+    /* font-weight: 300; */
+    padding-right: 35px;
+    /* padding-top: 15px; */
+    vertical-align: top;   
+    font-size: 14px;
+}
+
+.ar-signup .body ul li table tbody tr td.vtop{
+    vertical-align: top;
+    width: calc(100% - 270px);
+}
+
+.ar-signup .body ul li table tbody tr td.vtop .form-control{
+    border-color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 36px;
+    font-size: 14px;
+}
+
+.ar-signup .body ul li table tbody tr td.vtop .form-control:focus{
+    border: 1px solid rgb(37, 187, 37) !important;
+}
+
+.ar-signup .body ul li table tbody tr td.vtop textarea.form-control{
+    height: 75px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ar-signup .body ul li table tbody tr td.vtop .bts-in{
+    height: 15px;
 }
 
 .ar-signup .foot{

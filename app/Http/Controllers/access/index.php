@@ -58,6 +58,30 @@ class index extends Controller
         ];
 
 
+        // return view('access.signup2')->with($data);
+        return view('access.signup3')->with($data);
+    }
+
+    public function signup2(Request $request)
+    {
+
+        $Config = new Config;
+
+        $info = [
+            'geoip'         =>  $Config->getgeoip($request->ip()),
+            'uagent'        =>  $Config->uagent()
+        ];
+
+        //
+        $data = [
+            'URI'       =>  $Config->URI(),
+            'title'     =>  'Daftar | ' . $Config->apps()['namelabel'],
+            'apps'      =>  $Config->apps(),
+            'info'      =>  json_encode($info),
+            'app_level'     =>  $Config->apps()['app_level']
+        ];
+
+
         return view('access.signup2')->with($data);
     }
 

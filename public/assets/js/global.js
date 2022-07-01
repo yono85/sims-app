@@ -978,6 +978,33 @@ function checkbox(e){
 }
 
 
+// this for lazy load image with remove class hide
+function lazyloadimage()
+{
+    $.each(document.images, function(){
+        var this_image = this;
+        var src = $(this_image).attr('src') || '' ;
+        if(!src.length > 0){
+            
+         //this_image.src = options.loading; // show loading
+
+            var lsrc = $(this_image).data('src') || '' ;
+            if(lsrc.length > 0){
+                var img = new Image();
+                img.src = lsrc;
+                 
+                img.onload = function ()
+                 {
+                     $(this_image).removeClass("hide");
+                     this_image.src = this.src;
+
+                 };
+            }
+        }
+    });
+}
+
+
 //DOCUMENT CLICK
 $(document).click(function()
 {

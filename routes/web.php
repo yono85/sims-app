@@ -18,6 +18,7 @@ Route::get('/forgetpassword', $root . '\access\index@forget');
 Route::get('/resetpassword', $root . '\access\index@pageForget');
 Route::get('/registers/success', $root . '\access\register@success');
 Route::get('/signup', $root . '\access\index@signup');
+Route::get('/signup2', $root . '\access\index@signup2');
 Route::get('/account/verification', $root . '\account\index@verification');
 
 
@@ -78,8 +79,11 @@ Route::group(['prefix' => '/dashboard'], function() use ($root)
 
     //PAGE
     Route::get('/news/hibah', $root . '\dashboard\news\hibah\index@main');
-    Route::get('/news/pengumuman', $root . '\dashboard\news\pengumuman\index@main');
+    // Route::get('/news/pengumuman', $root . '\dashboard\news\pengumuman\index@main');
 
+
+    //LEMBAGA
+    Route::get('/lembaga/profile', $root . '\dashboard\lembaga\index@profile');
 
 //     // customers
 //     Route::get('/customers', $root . '\dashboard\customers\index@main');
@@ -136,7 +140,7 @@ Route::group(['prefix' => '/dashboard'], function() use ($root)
     Route::get('/account', $root . '\dashboard\account\index@main');
 
 
-    //ORDERS
+//ORDERS
     // Route::get('/financial/orders', $root . '\dashboard\ordernew\index@main');
 
     // FINANCIAL

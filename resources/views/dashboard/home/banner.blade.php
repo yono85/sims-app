@@ -40,7 +40,7 @@
 
                             <div class="carousel-inner br-rds8 h100p">
                                 <div class="carousel-item active br-rds8 h100p">
-                                    <img src="/assets/images/background/carousel/banner_1.jpeg" class="d-block w-100" alt="...">
+                                    <img src="" data-src="/assets/images/background/carousel/banner_1.jpeg" class="d-block w-100 hide" alt="...">
                                     <!-- <img src="#" class="d-block w-100" alt="..."> -->
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5 class="text-white"></h5>
@@ -48,7 +48,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item br-rds8 h100p">
-                                <img src="/assets/images/background/carousel/banner_1.jpeg" class="d-block w-100" alt="...">
+                                <img src="" data-src="/assets/images/background/carousel/banner_1.jpeg" class="d-block w-100 hide" alt="...">
                                     <!-- <img src="#" class="d-block w-100" alt="..."> -->
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5 class="text-white"></h5>
@@ -56,7 +56,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item br-rds8 h100p">
-                                <img src="/assets/images/background/carousel/banner_1.jpeg" class="d-block w-100" alt="...">
+                                <img src="" data-src="/assets/images/background/carousel/banner_1.jpeg" class="d-block w-100 hide" alt="...">
                                     <!-- <img src="#" class="d-block w-100" alt="..."> -->
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5 class="text-white"></h5>
@@ -232,5 +232,11 @@
 
 
 @section('script')
-
+<script>
+$(document).ready(function()
+{
+    lazyloadimage();
+    return false;
+})
+</script>
 @endsection
